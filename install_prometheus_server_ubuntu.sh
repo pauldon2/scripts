@@ -23,7 +23,7 @@ mv console* /etc/prometheus
 mv prometheus /usr/local/bin/
 mv promtool /usr/local/bin
 
-cat <<EOF> $PROMETHEUS_FOLDER_CONFIG/prometheus.yml
+cat <<EOF> $PROMETHEUS_CONFIG/prometheus.yml
 global:
   scrape_interval: 15s
 

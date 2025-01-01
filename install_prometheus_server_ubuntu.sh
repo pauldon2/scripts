@@ -60,6 +60,9 @@ chown -R prometheus:prometheus /etc/prometheus
 chown prometheus:prometheus /usr/local/bin/prometheus
 chown prometheus:prometheus /usr/local/bin/promtool
 
+#Check config
+#promtool check config /etc/prometheus/prometheus.yml
+
 systemctl daemon-reload
 systemctl start prometheus
 systemctl enable prometheus

@@ -1,9 +1,9 @@
 #!/bin/bash
-set -e
+set -ex
 #--------------------------------------------------------------------
-# Script to Install Grafana Server to Ubuntu22.04
+# Script to Install Grafana Server to Ubuntu24.04
 #--------------------------------------------------------------------
-GRAFANA_VERSION="11.1.0"
+GRAFANA_VERSION="11.6.1"
 PROMETHEUS_URL="http://localhost:9090"
 
 

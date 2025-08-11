@@ -1,10 +1,10 @@
 #!/bin/bash
-set -e
+set -ex
 #--------------------------------------------------------------------
-# Script to Install Prometheus Node_Exporter on Ubuntu 22.04 Linux
+# Script to Install Prometheus Node_Exporter on Ubuntu 24.04 Linux
 #--------------------------------------------------------------------
 # https://github.com/prometheus/node_exporter/releases
-NODE_EXPORTER_VERSION="1.7.0"
+NODE_EXPORTER_VERSION="1.9.1"
 
 useradd --system --no-create-home --shell /bin/false node_exporter
 

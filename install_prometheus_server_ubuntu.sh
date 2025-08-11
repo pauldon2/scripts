@@ -1,8 +1,8 @@
-#!/bin/bash -e
-#Script to Install Prometheus Server on Linux Ubuntu 22.04
+#!/bin/bash -ex
+#Script to Install Prometheus Server on Linux Ubuntu 24.04
 
 
-PROMETHEUS_VERSION="2.51.1"
+PROMETHEUS_VERSION="3.3.0"
 PROMETHEUS_CONFIG="/etc/prometheus"
 PROMETHEUS_DATA="/var/lib/prometheus"
 
@@ -18,7 +18,7 @@ wget https://github.com/prometheus/prometheus/releases/download/v$PROMETHEUS_VER
 tar xvfz prometheus-$PROMETHEUS_VERSION.linux-amd64.tar.gz
 cd prometheus-$PROMETHEUS_VERSION.linux-amd64
 
-mv console* /etc/prometheus
+#mv console* /etc/prometheus
 
 mv prometheus /usr/local/bin/
 mv promtool /usr/local/bin

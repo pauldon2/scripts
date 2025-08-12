@@ -1,8 +1,15 @@
-#!/bin/bash -x
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+    echo "Error: you need to pass two file names"
+    echo "Usage:"
+    echo "  $0 <sealed-secret.yaml> <recovered-secret.yaml>"
+    exit 1
+fi
 
 # Define file paths
-SEALED_SECRET_FILE="statistics-sealed-secret.yaml"
-RECOVERED_SECRET_FILE="statistics-recovered-secret.yaml"
+SEALED_SECRET_FILE=$1
+RECOVERED_SECRET_FILE=$2
 SEALED_SECRETS_KEY_YAML_FILE="sealed-secrets-key.yaml"
 SEALED_SECRETS_KEY_PEM_FILE="sealed-secrets-key.pem"
 
